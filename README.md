@@ -14,7 +14,8 @@ In `composer.json`
 ```
 "require-dev": {
   "codeception/codeception": "~2.1",
-  "codeception/symfony1module": "*"
+  "vlucas/phpdotenv": "^2.4",
+  "reactorbits-montreal/symfony1module": "^1.0"
 }
 ```
 
