@@ -21,9 +21,9 @@ In `composer.json`
 
 ## Status
 
-* Maintainer: **davert**
+* Maintainer: **nictaporuk**
 * Stability: **stable**
-* Contact: codecept@davert.mail.ua
+* Contact: nictaporuk@gmail.com
 
 ## Configuration
 
