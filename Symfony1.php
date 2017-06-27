@@ -114,32 +114,6 @@ class Symfony1 extends Module
             $this->call($this->browser->getResponse()->getHttpHeader('Location'));
         }
     }
-
-    /**
-     * Opens the page.
-     *
-     * @param $page
-     */
-    public function amOnPage($page)
-    {
-        $this->browser->get($page);
-        $this->debug('Response code: ' . $this->browser->getResponse()->getStatusCode());
-        $this->followRedirect();
-    }
-
-    /**
-     * Click on link or button and move to next page.
-     * Either link text, css selector, or xpath can be passed
-     *
-     * @param $link
-     */
-    public function click($link)
-    {
-        $this->browser->click($link);
-        $this->debug('moved to page ' . $this->browser->fixUri($this->browser->getRequest()->getUri()));
-        $this->followRedirect();
-    }
-
     /**
      * Check if current page doesn't contain the text specified.
      * Specify the css selector to match only specific region.
